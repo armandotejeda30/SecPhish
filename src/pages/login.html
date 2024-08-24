@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/styles/login.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="/login" method="POST">
+            <img src="/src/images/logo1.png" alt="LOGO2">
+            <h1>Welcome to X-Phish</h1>
+
+            <div class="form_input">
+                <input type="text" name="usuario" id="usuario" autocomplete="off" maxlength="20" required/>
+                <label for="">usuario</label>
+            </div>
+
+            <div class="form_input">
+                <input type="password" name="pass" id="pass" autocomplete="off" required maxlength="20"/>
+                <label for="">password</label>
+            </div>
+
+            <div class="form_remember">
+                <label>
+                    <input type="checkbox" name="" id="" />
+                    Remember me
+                </label>
+            </div>
+
+            <div class="form_btn">
+                <button type="submit" class="form_btn">Login Now</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

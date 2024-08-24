@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+.wrapper {
+    width: 420px;
+    background-color: #0d0f14;
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.wrapper img {
+    width: 64px;
+    display: block;
+    margin: 0 auto;
+    
+}
+.wrapper .form_input {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.form_input {
+    position: relative;
+    margin: 20px 0;
+}
+
+.form_input input {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 10px;
+    background: transparent;
+    border: 1.2px solid #915bff;
+    outline: none;
+    border-radius: 5px;
+    
+}
+
+.form_input label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: grey;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.form_input input:focus~label,
+.form_input input:valid~label{
+    top: 0;
+    font-size: 12px;
+    background: #0d0f14;
+
+}
+
+
+
+.wrapper .form_remember {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.wrapper .form_btn {
+    background: #915bff;
+    color: #fff;
+    margin-bottom: 10%;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+
+}
+
+.wrapper .form_btn:hover{
+    background: #764ace;
+
+}
+
+
+#particles-js{
+    background: #000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
